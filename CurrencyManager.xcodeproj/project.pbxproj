@@ -15,6 +15,17 @@
 		8B9C3EAF259237D800E9F7F9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8B9C3EAD259237D800E9F7F9 /* LaunchScreen.storyboard */; };
 		8B9C3EBA259237D800E9F7F9 /* CurrencyManagerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B9C3EB9259237D800E9F7F9 /* CurrencyManagerTests.swift */; };
 		8B9C3EC5259237D800E9F7F9 /* CurrencyManagerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B9C3EC4259237D800E9F7F9 /* CurrencyManagerUITests.swift */; };
+		8B9C3EE12592383800E9F7F9 /* RemoteMoneyService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B9C3ED72592383800E9F7F9 /* RemoteMoneyService.swift */; };
+		8B9C3EE22592383800E9F7F9 /* MoneyRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B9C3ED82592383800E9F7F9 /* MoneyRepository.swift */; };
+		8B9C3EE32592383800E9F7F9 /* MockMoneyService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B9C3ED92592383800E9F7F9 /* MockMoneyService.swift */; };
+		8B9C3EE42592383800E9F7F9 /* CurrencyManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B9C3EDA2592383800E9F7F9 /* CurrencyManager.swift */; };
+		8B9C3EE52592383800E9F7F9 /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B9C3EDB2592383800E9F7F9 /* CustomTextField.swift */; };
+		8B9C3EE62592383800E9F7F9 /* MoneyInputManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B9C3EDC2592383800E9F7F9 /* MoneyInputManager.swift */; };
+		8B9C3EE72592383800E9F7F9 /* MoneyInputView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8B9C3EDD2592383800E9F7F9 /* MoneyInputView.xib */; };
+		8B9C3EE82592383800E9F7F9 /* MoneyConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B9C3EDE2592383800E9F7F9 /* MoneyConfig.swift */; };
+		8B9C3EE92592383800E9F7F9 /* MoneyService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B9C3EDF2592383800E9F7F9 /* MoneyService.swift */; };
+		8B9C3EEA2592383800E9F7F9 /* MoneyInputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B9C3EE02592383800E9F7F9 /* MoneyInputView.swift */; };
+		8B9C3EEF259238A700E9F7F9 /* Money.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8B9C3EEE259238A700E9F7F9 /* Money.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +60,17 @@
 		8B9C3EC0259237D800E9F7F9 /* CurrencyManagerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CurrencyManagerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8B9C3EC4259237D800E9F7F9 /* CurrencyManagerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyManagerUITests.swift; sourceTree = "<group>"; };
 		8B9C3EC6259237D800E9F7F9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8B9C3ED72592383800E9F7F9 /* RemoteMoneyService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RemoteMoneyService.swift; sourceTree = "<group>"; };
+		8B9C3ED82592383800E9F7F9 /* MoneyRepository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MoneyRepository.swift; sourceTree = "<group>"; };
+		8B9C3ED92592383800E9F7F9 /* MockMoneyService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MockMoneyService.swift; sourceTree = "<group>"; };
+		8B9C3EDA2592383800E9F7F9 /* CurrencyManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CurrencyManager.swift; sourceTree = "<group>"; };
+		8B9C3EDB2592383800E9F7F9 /* CustomTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
+		8B9C3EDC2592383800E9F7F9 /* MoneyInputManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MoneyInputManager.swift; sourceTree = "<group>"; };
+		8B9C3EDD2592383800E9F7F9 /* MoneyInputView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MoneyInputView.xib; sourceTree = "<group>"; };
+		8B9C3EDE2592383800E9F7F9 /* MoneyConfig.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MoneyConfig.swift; sourceTree = "<group>"; };
+		8B9C3EDF2592383800E9F7F9 /* MoneyService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MoneyService.swift; sourceTree = "<group>"; };
+		8B9C3EE02592383800E9F7F9 /* MoneyInputView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MoneyInputView.swift; sourceTree = "<group>"; };
+		8B9C3EEE259238A700E9F7F9 /* Money.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Money.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,12 +121,14 @@
 		8B9C3EA1259237D700E9F7F9 /* CurrencyManager */ = {
 			isa = PBXGroup;
 			children = (
+				8B9C3ED62592383800E9F7F9 /* Money */,
 				8B9C3EA2259237D700E9F7F9 /* AppDelegate.swift */,
 				8B9C3EA4259237D700E9F7F9 /* SceneDelegate.swift */,
 				8B9C3EA6259237D700E9F7F9 /* ViewController.swift */,
 				8B9C3EA8259237D700E9F7F9 /* Main.storyboard */,
 				8B9C3EAB259237D800E9F7F9 /* Assets.xcassets */,
 				8B9C3EAD259237D800E9F7F9 /* LaunchScreen.storyboard */,
+				8B9C3EEE259238A700E9F7F9 /* Money.plist */,
 				8B9C3EB0259237D800E9F7F9 /* Info.plist */,
 			);
 			path = CurrencyManager;
@@ -126,6 +150,23 @@
 				8B9C3EC6259237D800E9F7F9 /* Info.plist */,
 			);
 			path = CurrencyManagerUITests;
+			sourceTree = "<group>";
+		};
+		8B9C3ED62592383800E9F7F9 /* Money */ = {
+			isa = PBXGroup;
+			children = (
+				8B9C3ED72592383800E9F7F9 /* RemoteMoneyService.swift */,
+				8B9C3ED82592383800E9F7F9 /* MoneyRepository.swift */,
+				8B9C3ED92592383800E9F7F9 /* MockMoneyService.swift */,
+				8B9C3EDA2592383800E9F7F9 /* CurrencyManager.swift */,
+				8B9C3EDB2592383800E9F7F9 /* CustomTextField.swift */,
+				8B9C3EDC2592383800E9F7F9 /* MoneyInputManager.swift */,
+				8B9C3EDD2592383800E9F7F9 /* MoneyInputView.xib */,
+				8B9C3EDE2592383800E9F7F9 /* MoneyConfig.swift */,
+				8B9C3EDF2592383800E9F7F9 /* MoneyService.swift */,
+				8B9C3EE02592383800E9F7F9 /* MoneyInputView.swift */,
+			);
+			path = Money;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -232,7 +273,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				8B9C3EAF259237D800E9F7F9 /* LaunchScreen.storyboard in Resources */,
+				8B9C3EEF259238A700E9F7F9 /* Money.plist in Resources */,
 				8B9C3EAC259237D800E9F7F9 /* Assets.xcassets in Resources */,
+				8B9C3EE72592383800E9F7F9 /* MoneyInputView.xib in Resources */,
 				8B9C3EAA259237D700E9F7F9 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -258,9 +301,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8B9C3EE62592383800E9F7F9 /* MoneyInputManager.swift in Sources */,
+				8B9C3EE12592383800E9F7F9 /* RemoteMoneyService.swift in Sources */,
 				8B9C3EA7259237D700E9F7F9 /* ViewController.swift in Sources */,
+				8B9C3EE42592383800E9F7F9 /* CurrencyManager.swift in Sources */,
+				8B9C3EE82592383800E9F7F9 /* MoneyConfig.swift in Sources */,
 				8B9C3EA3259237D700E9F7F9 /* AppDelegate.swift in Sources */,
+				8B9C3EE52592383800E9F7F9 /* CustomTextField.swift in Sources */,
+				8B9C3EE22592383800E9F7F9 /* MoneyRepository.swift in Sources */,
+				8B9C3EE32592383800E9F7F9 /* MockMoneyService.swift in Sources */,
 				8B9C3EA5259237D700E9F7F9 /* SceneDelegate.swift in Sources */,
+				8B9C3EEA2592383800E9F7F9 /* MoneyInputView.swift in Sources */,
+				8B9C3EE92592383800E9F7F9 /* MoneyService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

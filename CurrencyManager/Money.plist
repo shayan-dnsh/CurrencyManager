@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>APLocale</key>
+	<string>fa_IR</string>
+	<key>CurrencyISODic</key>
+	<dict>
+		<key>fa</key>
+		<string>ریال</string>
+		<key>en</key>
+		<string>IRR</string>
+		<key>tr</key>
+		<string>Riyali</string>
+	</dict>
+	<key>MoneyConfig</key>
+	<dict>
+		<key>language</key>
+		<string>fa</string>
+		<key>country</key>
+		<string>IR</string>
+		<key>isoCode</key>
+		<string>IRR</string>
+		<key>decimalSeperator</key>
+		<string></string>
+		<key>groupingSeperator</key>
+		<string>٬</string>
+		<key>fractionCount</key>
+		<string>0</string>
+		<key>fractionSymbol</key>
+		<string></string>
+		<key>regex</key>
+		<string>(^[1-9]\d{0,2}(\,\d{3})*(,\d{0})?$)*</string>
+	</dict>
+</dict>
+</plist>
