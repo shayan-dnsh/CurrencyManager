@@ -1,13 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
     <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
-        <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
-        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MoneyInputView" customModule="CurrencySample" customModuleProvider="target">
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MoneyInputView" customModule="CurrencyManager" customModuleProvider="target">
             <connections>
                 <outlet property="containerView" destination="hKn-u8-yGD" id="8D4-un-3Y6"/>
                 <outlet property="moneyTextField" destination="cTx-dR-dZg" id="cZ9-tD-NeJ"/>
@@ -21,28 +20,19 @@
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hKn-u8-yGD">
                     <rect key="frame" x="0.0" y="0.0" width="414" height="66"/>
                     <subviews>
-                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="cTx-dR-dZg" customClass="CustomTextField" customModule="CurrencySample" customModuleProvider="target">
-                            <rect key="frame" x="0.0" y="0.0" width="372" height="66"/>
+                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" placeholder="Enter money please " textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="cTx-dR-dZg" customClass="CustomCurrencyTextField" customModule="CurrencyManager" customModuleProvider="target">
+                            <rect key="frame" x="0.0" y="0.0" width="414" height="66"/>
                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
                             <textInputTraits key="textInputTraits"/>
                         </textField>
-                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="g1c-OX-MTZ">
-                            <rect key="frame" x="372" y="0.0" width="42" height="66"/>
-                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                            <nil key="textColor"/>
-                            <nil key="highlightedColor"/>
-                        </label>
                     </subviews>
                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <constraints>
-                        <constraint firstAttribute="bottom" secondItem="g1c-OX-MTZ" secondAttribute="bottom" id="2EJ-gX-bhd"/>
                         <constraint firstItem="cTx-dR-dZg" firstAttribute="leading" secondItem="hKn-u8-yGD" secondAttribute="leading" id="3TW-eT-uxU"/>
-                        <constraint firstAttribute="trailing" secondItem="g1c-OX-MTZ" secondAttribute="trailing" id="XGb-lK-EIH"/>
+                        <constraint firstAttribute="trailing" secondItem="cTx-dR-dZg" secondAttribute="trailing" id="7Xq-Om-xq0"/>
                         <constraint firstItem="cTx-dR-dZg" firstAttribute="top" secondItem="hKn-u8-yGD" secondAttribute="top" id="diW-Hq-51a"/>
-                        <constraint firstItem="g1c-OX-MTZ" firstAttribute="top" secondItem="hKn-u8-yGD" secondAttribute="top" id="gbF-jI-edS"/>
                         <constraint firstAttribute="bottom" secondItem="cTx-dR-dZg" secondAttribute="bottom" id="rPA-Ou-aee"/>
-                        <constraint firstItem="g1c-OX-MTZ" firstAttribute="leading" secondItem="cTx-dR-dZg" secondAttribute="trailing" id="x6j-Wn-taJ"/>
                     </constraints>
                 </view>
             </subviews>

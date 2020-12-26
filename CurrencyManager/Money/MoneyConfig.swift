@@ -15,7 +15,7 @@ struct MoneyConfig: Codable {
 }
 
 struct Currency: Codable {
-    var symbol: String?
+    var isoCode: String?
     var decimalSeperator: String?
     var groupingSeperator: String?
     var fractionCount: Int?

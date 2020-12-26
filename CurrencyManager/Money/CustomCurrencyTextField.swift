@@ -5,7 +5,7 @@
 
 import UIKit
 
-class CustomTextField: UITextField {
+class CustomCurrencyTextField: UITextField {
     
     enum TextFieldState {
         case normal
@@ -13,9 +13,10 @@ class CustomTextField: UITextField {
         case focus
     }
     
+    
     let padding = UIEdgeInsets(top: 0, left: 5, bottom: 0, right: 5)
     
-    let moneyInputManager = MoneyInputManager(moneyRepository: MoneyRepository(moneyService: MockMoneyService()), locale: "fa_IR")
+    let moneyInputManager = MoneyInputManager(moneyRepository: MoneyRepository(moneyService: MoneyServiceProvider()))
     
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -36,10 +37,9 @@ class CustomTextField: UITextField {
         self.keyboardType        = .numbersAndPunctuation
     }
     
-    
 }
 
-extension CustomTextField: UITextFieldDelegate {
+extension CustomCurrencyTextField: UITextFieldDelegate {
     func textFieldDidBeginEditing(_ textField: UITextField) {
         print("textFieldDidBeginEditing")
     }
@@ -61,7 +61,7 @@ extension CustomTextField: UITextFieldDelegate {
             return false
         }
         
-        guard let textField = textField as? CustomTextField else {
+        guard let textField = textField as? CustomCurrencyTextField else {
             return false
         }
         
@@ -125,7 +125,7 @@ extension CustomTextField: UITextFieldDelegate {
 
 
 
-extension CustomTextField {
+extension CustomCurrencyTextField {
     
     func performCurrency(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool? {
         guard var textFieldText = textField.text,
@@ -139,7 +139,7 @@ extension CustomTextField {
             return false
         }
         
-        guard let textField = textField as? CustomTextField else {
+        guard let textField = textField as? CustomCurrencyTextField else {
             return false
         }
         

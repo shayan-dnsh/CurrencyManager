@@ -9,19 +9,23 @@ import UIKit
 
 class ViewController: UIViewController {
 
-    @IBOutlet weak var moneyLabel: UILabel!
+    @IBOutlet weak var actualInputLabel: UILabel!
     
     @IBOutlet weak var moneyInputView: MoneyInputView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        moneyInputView.moneyInputViewDelegate = self
     }
 
-    
-    @IBAction func transferMoney(_ sender: Any) {
-        print(moneyInputView.moneyTextField.moneyInputManager.convertUnit(amount: moneyInputView.moneyTextField.text))
-        moneyLabel.text = moneyInputView.moneyTextField.moneyInputManager.convertUnit(amount: moneyInputView.moneyTextField.text)
-    }
 
 }
 
+extension ViewController: MoneyInputViewProtocol {
+    func customTextFieldChanged() {
+        let textField = moneyInputView.moneyTextField
+        actualInputLabel.text = textField?.moneyInputManager.convertUnit(amount: textField?.text)
+    }
+    
+    
+}

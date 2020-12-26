@@ -23,17 +23,13 @@ protocol MoneyValidator {
 class MoneyInputManager: MoneyValidator {
     
     
-    
     var moneyRepository: MoneyRepository
     
     var currentMoneyConfig: MoneyConfig?
     
-    var locale: String
-    
-    init(moneyRepository: MoneyRepository, locale: String) {
+    init(moneyRepository: MoneyRepository) {
         self.moneyRepository = moneyRepository
-        self.locale = locale
-        self.currentMoneyConfig = moneyRepository.getMoney(locale: locale)
+        self.currentMoneyConfig = moneyRepository.getMoneyConfig(locale: "fa_IR")
     }
     
     // Validate input based on regex
@@ -62,7 +58,7 @@ class MoneyInputManager: MoneyValidator {
         currencyFormatter.numberStyle           = .decimal
         currencyFormatter.maximumFractionDigits = currentMoneyConfig?.currency?.fractionCount ?? 0
         currencyFormatter.groupingSeparator     = currentMoneyConfig?.currency?.groupingSeperator
-        currencyFormatter.locale = Locale(identifier: locale)
+        currencyFormatter.locale = Locale(identifier: self.currentMoneyConfig?.locale ?? Locale.current.identifier)
         
         if let numberValue = Double(value) {
             var result = currencyFormatter.string(from: NSNumber(value: numberValue))?.toEnNumber

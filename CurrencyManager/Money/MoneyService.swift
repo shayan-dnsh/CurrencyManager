@@ -9,5 +9,5 @@ import Foundation
 
 protocol MoneyService {
     func getCurrentMoney() -> MoneyConfig?
-    func getMoney(locale: String) -> MoneyConfig?
+    func getMoneyConfig(locale: String?) -> MoneyConfig?
 }

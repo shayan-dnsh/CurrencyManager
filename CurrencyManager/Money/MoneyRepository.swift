@@ -11,6 +11,7 @@ struct MoneyRepository {
     
     let moneyService: MoneyService
     
+    
     init(moneyService: MoneyService) {
         self.moneyService = moneyService
     }
@@ -19,7 +20,7 @@ struct MoneyRepository {
         return moneyService.getCurrentMoney()
     }
     
-    func getMoney(locale: String) -> MoneyConfig? {
-        return moneyService.getMoney(locale: locale)
+    func getMoneyConfig(locale: String?) -> MoneyConfig? {
+        return moneyService.getMoneyConfig(locale: locale)
     }
 }

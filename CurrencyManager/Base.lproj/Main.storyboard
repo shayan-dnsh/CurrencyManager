@@ -16,50 +16,44 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Money" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pfO-PB-M47">
-                                <rect key="frame" x="180" y="360.5" width="54.5" height="21.5"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bu4-Bm-CcV" customClass="MoneyInputView" customModule="CurrencySample" customModuleProvider="target">
-                                <rect key="frame" x="36" y="288" width="342" height="51"/>
-                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="Hp2-Oj-MwS">
+                                <rect key="frame" x="36" y="387" width="342" height="122"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bu4-Bm-CcV" customClass="MoneyInputView" customModule="CurrencyManager" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="342" height="51"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="51" id="IFP-4c-Lxo"/>
+                                        </constraints>
+                                    </view>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Actual Input" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GQn-58-1qe">
+                                        <rect key="frame" x="0.0" y="71" width="342" height="51"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="51" id="nqV-mz-pi2"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="51" id="IFP-4c-Lxo"/>
+                                    <constraint firstItem="bu4-Bm-CcV" firstAttribute="leading" secondItem="Hp2-Oj-MwS" secondAttribute="leading" id="c7D-J9-WNH"/>
+                                    <constraint firstAttribute="trailing" secondItem="bu4-Bm-CcV" secondAttribute="trailing" id="hX9-PB-k8y"/>
                                 </constraints>
-                            </view>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zly-0I-rWJ">
-                                <rect key="frame" x="137" y="469" width="140" height="40"/>
-                                <color key="backgroundColor" red="0.94509803920000002" green="0.94509803920000002" blue="0.94509803920000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="40" id="DKM-ID-vv4"/>
-                                    <constraint firstAttribute="width" constant="140" id="GdX-ng-99s"/>
-                                </constraints>
-                                <state key="normal" title="Transfer">
-                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                </state>
-                                <connections>
-                                    <action selector="transferMoney:" destination="BYZ-38-t0r" eventType="touchUpInside" id="gnL-AC-DsL"/>
-                                </connections>
-                            </button>
+                            </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="bu4-Bm-CcV" firstAttribute="centerX" secondItem="pfO-PB-M47" secondAttribute="centerX" id="Idh-z8-Fsw"/>
-                            <constraint firstItem="bu4-Bm-CcV" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="36" id="Q00-Ds-Cvf"/>
-                            <constraint firstItem="Zly-0I-rWJ" firstAttribute="top" secondItem="pfO-PB-M47" secondAttribute="bottom" constant="87" id="QKp-DF-Jec"/>
-                            <constraint firstItem="pfO-PB-M47" firstAttribute="centerX" secondItem="Zly-0I-rWJ" secondAttribute="centerX" id="Qyt-dq-dbr"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="bu4-Bm-CcV" secondAttribute="trailing" constant="36" id="US2-6c-rwz"/>
-                            <constraint firstItem="bu4-Bm-CcV" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="244" id="eOE-WC-GOv"/>
-                            <constraint firstItem="pfO-PB-M47" firstAttribute="top" secondItem="bu4-Bm-CcV" secondAttribute="bottom" constant="21.5" id="j0u-hr-4H2"/>
-                            <constraint firstItem="bu4-Bm-CcV" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="oca-Cr-Wd3"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Hp2-Oj-MwS" secondAttribute="trailing" constant="36" id="BKp-qs-VGO"/>
+                            <constraint firstItem="Hp2-Oj-MwS" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="GWD-R2-ubu"/>
+                            <constraint firstItem="Hp2-Oj-MwS" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="pna-SG-dJV"/>
+                            <constraint firstItem="Hp2-Oj-MwS" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="36" id="qWI-P7-0AA"/>
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="actualInputLabel" destination="GQn-58-1qe" id="bB1-mI-lMx"/>
                         <outlet property="moneyInputView" destination="bu4-Bm-CcV" id="8yE-A8-rCm"/>
-                        <outlet property="moneyLabel" destination="pfO-PB-M47" id="6U3-fT-o52"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

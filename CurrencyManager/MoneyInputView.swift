@@ -5,12 +5,19 @@
 
 import UIKit
 
+protocol MoneyInputViewProtocol {
+    func customTextFieldChanged()
+}
+
 @available(iOS 9.0, *)
 class MoneyInputView: UIView {
     
-    @IBOutlet weak var moneyTextField: CustomTextField!
+    @IBOutlet weak var moneyTextField: CustomCurrencyTextField!
     @IBOutlet weak var containerView: UIView!
     
+    private var actualInput = ""
+    
+    var moneyInputViewDelegate: MoneyInputViewProtocol?
     
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -40,6 +47,10 @@ class MoneyInputView: UIView {
         moneyTextField.clearButtonMode = .whileEditing
     }
     
+    func getActualMoneyInput() -> String? {
+        return ""
+    }
+    
 }
 
 
@@ -67,10 +78,11 @@ private extension UINib {
 @available(iOS 9.0, *)
 extension MoneyInputView: UITextFieldDelegate {
     func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
-        guard let textField = textField as? CustomTextField else {
+        guard let textField = textField as? CustomCurrencyTextField else {
             return false
         }
-        textField.performCurrency(textField, shouldChangeCharactersIn: range, replacementString: string)
-        return false
+        let returnValue = textField.performCurrency(textField, shouldChangeCharactersIn: range, replacementString: string) ?? false
+        moneyInputViewDelegate?.customTextFieldChanged()
+        return returnValue
     }
 }
