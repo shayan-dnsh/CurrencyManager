@@ -1,7 +1,7 @@
 # Currency Manager 
 > This is currency manager project that going to be a pod file in feauture. For now it support TRY, USD and RIAL. You can use CustomCurrencyTextField or create your custom textfield that used MoneyInputManager.
 
-<img src="https://github.com/shayan-dnsh/DropAnimation/blob/master/ScreenShot/drob_animation.gif"  height="668" width="375" />
+<img src="https://github.com/shayan-dnsh/CurrencyManager/blob/main/ScreenShot/currency_manager.gif"  height="668" width="375" />
 
 
 ## Installation
